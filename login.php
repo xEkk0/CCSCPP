@@ -46,7 +46,7 @@ else
 			$password = $_POST['password'];
 		}
 		//We get the password of the user
-		$req = mysqli_query($link, 'select password,id,salt from users where username="'.$username.'"');
+		$req = mysqli_query($link, 'select password,id,salt from users where email="'.$username.'"');
 		$dn  = mysqli_fetch_array($req);
 		$password = hash("sha512", $dn['salt'].$password); // Hash with the salt to match database.
 		//We compare the submited password and the real one, and we check if the user exists
