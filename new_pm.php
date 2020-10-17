@@ -42,7 +42,7 @@ if (isset($_SESSION['username'])) {
 			$recip   = mysqli_real_escape_string($link, $orecip);
 			$message = mysqli_real_escape_string($link, nl2br(htmlentities($omessage, ENT_QUOTES, 'UTF-8')));
 			//We check if the recipient exists
-			$dn1 = mysqli_fetch_array(mysqli_query($link, 'select count(id) as recip, id as recipid, (select count(*) from pm) as npm from users where username="'.$recip.'"'));
+			$dn1 = mysqli_fetch_array(mysqli_query($link,"select count(id) as recip, id as recipid, (select count(*) from pm) as npm from users where username=$recip"));
 			if ($dn1['recip'] == 1) {
 				//We check if the recipient is not the actual user
 				if ($dn1['recipid'] != $_SESSION['userid']) {
