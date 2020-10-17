@@ -28,6 +28,7 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 		$_POST['password']  = stripslashes($_POST['password']);
 		$_POST['passverif'] = stripslashes($_POST['passverif']);
 		$_POST['email']  	= stripslashes($_POST['email']);
+		$_POST['avatar']	= stripslashes($_POST['avatar']);
 	}
 	//We check if the two passwords are identical
 	$errors = [];
