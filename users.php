@@ -1,7 +1,7 @@
 <!-- Shows a list of users and their emails. -->
 <?php
 include('config.php');
-if(!isset($_SESSION['username'])) die('You must be logged to access this page.');
+if(!isset($_SESSION['username'])) die('You must be logged in to access this page.');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
