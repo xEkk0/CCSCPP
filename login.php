@@ -79,7 +79,7 @@ else
         <div class="container-fluid center">
         	<div class="row form-group">
 				<div class="col-4">
-            	<label for="username">Username</label>
+            	<label for="email">Email</label>
             	</div>
 
             	<div class="col-5">
