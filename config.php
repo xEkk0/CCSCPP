@@ -23,7 +23,7 @@ if (!$link) {
 $mail_webmaster = 'knewaz@gmail.com';
 
 //Top site root URL
-$url_root = 'https://fast-scrubland-99567.herokuapp.com/';
+$url_root = 'https://ccscp.herokuapp.com/';
 
 /******************************************************
 -----------------Optional Configuration----------------
