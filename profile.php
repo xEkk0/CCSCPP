@@ -35,7 +35,6 @@ This is the profile of "<?php echo htmlentities($dnn['username']); ?>" :
 ?>
 			</td>
 			<td class="left"><h1><?php echo htmlentities($dnn['username'], ENT_QUOTES, 'UTF-8'); ?></h1>
-Email: <?php echo htmlentities($dnn['email'], ENT_QUOTES, 'UTF-8'); ?><br />
 This user joined the website on <?php echo date('Y/m/d',$dnn['signup_date']); ?></td>
 		</tr>
 	</table>
