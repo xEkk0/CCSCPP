@@ -9,10 +9,10 @@ can work correctly.
 ******************************************************/
 
 //Access to Heroku DataBase. Account data hardcoded.
-$heroku_svr = 'us-cdbr-iron-east-01.cleardb.net:3306'; // Server's URL
-$heroku_usr = 'bcb94ff664a17f';                        // Root user.
-$heroku_pwd = 'c4780c9e';                              // Password.
-$heroku_sch = 'heroku_f71fa6cda1bf9f5';                // Schema.
+$heroku_svr = 'us-cdbr-east-02.cleardb.com:3306'; // Server's URL
+$heroku_usr = 'b10f0b5e83292a';                        // Root user.
+$heroku_pwd = '16b00e78';                              // Password.
+$heroku_sch = 'heroku_e4d9e420afbc30f';                // Schema.
 $link	    = new mysqli($heroku_svr, $heroku_usr, $heroku_pwd, $heroku_sch);
 
 if (!$link) {
