@@ -61,7 +61,7 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 						$form = false;
 ?>
 		<div class="message">You have successfuly been signed up. You can log in.<br />
-		<a href="connexion.php">Log in</a></div>
+		<a href="login.php">Log in</a></div>
 <?php
 					}
 					else
