@@ -9,11 +9,11 @@ can work correctly.
 ******************************************************/
 
 //Access to Heroku DataBase. Account data hardcoded.
-$heroku_svr = 'us-cdbr-east-02.cleardb.com:3306'; // Server's URL
-$heroku_usr = 'b10f0b5e83292a';                        // Root user.
-$heroku_pwd = '16b00e78';                              // Password.
-$heroku_sch = 'heroku_e4d9e420afbc30f';                // Schema.
-$link	    = new mysqli($heroku_svr, $heroku_usr, $heroku_pwd, $heroku_sch);
+$heroku_svr = 'eu-cdbr-west-02.cleardb.net:3306';	// db URL
+$heroku_usr = 'ba94587e2266f9';						// user
+$heroku_pwd = 'b2ff9a09';							// password
+$heroku_sch = 'heroku_45ca0508f4cea63';				// schema
+$link	    = new mysqli($heroku_svr, $heroku_usr, $heroku_pwd, $heroku_sch);	// connect to the db
 
 if (!$link) {
 	die('Could not connect: ' . mysqli_error());
